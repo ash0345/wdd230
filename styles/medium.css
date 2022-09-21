@@ -1,0 +1,10 @@
+@media only screen and (min-width: 32.5em) {
+    .my-name {
+        font-size: 2em;
+        margin: auto;
+        margin-right: 15px;
+    }
+    .home-page-pic {
+        padding: 5%;
+    }
+}
