@@ -1,0 +1,53 @@
+header {
+    background-color: #ffabaf;
+    margin: 5px;
+    text-align: center;
+    padding: 2px;
+}
+
+img {
+    width: 100%;
+    padding: 10px 0 0 0;
+}
+
+.content {
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.clientcare, .pinterest, .youtube {
+    margin: 15px;
+    padding: 10px;
+    background-color: #f1ece3;
+    border-radius: 5% 5% 0 0;
+    border: 2px solid #ffabaf;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #ffabaf;
+    margin: 0;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+p {
+    text-align: center;
+}
+
+footer {
+    background-color: #ffabaf;
+    padding: 2%;
+    margin: 5px;
+    text-align: center;
+}
+
+.modDate {
+    margin-bottom: .5em;
+}
