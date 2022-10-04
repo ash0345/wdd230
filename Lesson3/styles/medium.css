@@ -1,0 +1,29 @@
+@media only screen and (min-width: 32.5em){
+    body {
+        font-size: 18px;
+    }
+    .nav-bar {
+        flex-direction: row;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        /* display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 125px; */
+    }
+    .site-logo-header {
+        width: 20%;
+    }
+    h1 {
+        margin: auto;
+    }
+    #demo li {
+        margin-left: 190px;
+    }
+    .scenarios {
+        margin-left: 150px;
+    }
+}
