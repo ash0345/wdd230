@@ -34,11 +34,19 @@ h1 {
     margin-top: 5px;
 }
 
-nav button {
+#hamburgerBtn {
     margin: .2rem 2vw;
     background: rgba(0,0,0,0.2);
     border: 2px solid rgba(0,0,0,0.3);
     font-size: 2rem;
+}
+
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
 }
 
 nav {
