@@ -6,3 +6,9 @@ document.querySelector("#update").textContent = Update;
 const todaysdate = new Date();
 const year = todaysdate.getFullYear();
 document.querySelector("#year").textContent = year;
+
+//current date
+const fulldateUK = new Intl.DateTimeFormat("en-UK", {
+	dateStyle: "full"
+}).format(todaysdate);
+document.querySelector(".date").textContent = fulldateUK;
