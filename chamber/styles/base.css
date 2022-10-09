@@ -45,15 +45,15 @@ h1 {
     display: block;
 }
 
-#hamburgerBtn.open span:nth-child(1) {
+#hamburgerBtn span:nth-child(2) {
     display: none;
 }
 
 nav {
     background-color: #586f7c;
     line-height: 3em;
-    text-align: center;
-    font-size: 1.2em;
+    /* text-align: center;
+    font-size: 1.2em; */
 }
 
 #nav-bar {
@@ -86,14 +86,48 @@ nav a:hover {
     /* color: #586f7c; */
     background-color: #2f4550;
 }  
-
-nav ul {
+ 
+/* nav ul {
     display: none;
 }
 
 nav ul.open {
     display: block;
+} */
+
+/* BODY */
+
+.hero, .event,
+.weather, .news, .join {
+    width: 100%;
+    height: 85px;
+    border: 1px solid rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.2);
+    padding: 55px 0;
+    margin-bottom: 5px;
 }
+
+.spotlights {
+    width: 100%;
+    height: 150px;
+    border: 1px solid rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.2);
+    margin-bottom: 5px;
+    display: flex;
+}
+
+section div {
+    display: inline;
+    width: 33%;
+    height: 85%;
+    border: 1px solid rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.2);
+    padding: 55px 0;
+    margin: 10px;
+    justify-content: center;
+}
+
+
 
 /* FOOTER */
 
@@ -102,6 +136,11 @@ footer {
     padding: 2%;
     color: #f4f4f9;
     font-family: 'Lora', 'Times New Roman', Times, serif;
+}
+
+.map {
+    text-decoration: none;
+    color: #f4f4f9;
 }
 
 .line {
