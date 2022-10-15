@@ -16,13 +16,18 @@
         grid-column: 1/4;
         grid-row: 1/2;
     }
+    .hero p {
+        padding-left: 20px;
+    }
     .news {
         grid-column: 1/4;
         grid-row: 2/3;
     }
     .spotlights {
         grid-column: 1/4;
-        grid-row: 3/4
+        grid-row: 3/4;
+        display: flex;
+        font-size: .8em;
     }
     .join {
         grid-column: 1/4;
@@ -36,16 +41,19 @@
     .weather {
         grid-column: 3/4;
     }
+    .weather p {
+        align-items: flex-end;
+    }
     .hero, .event,
     .weather, .news, .join {
         height: 150px;
     }
-    .spotlights {
-        display: flex;
-    }
     section div {
         width: 50%;
         height: 150px;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
     }
     .footer-content-1 {
         display: grid;

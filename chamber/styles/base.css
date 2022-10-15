@@ -126,6 +126,14 @@ nav a:hover {
     padding: 55px 0;
     margin-bottom: 10px;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.pumpkin {
+    width: 18%;
 }
 
 .spotlights {
