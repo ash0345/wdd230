@@ -2,6 +2,9 @@
     body {
         font-size: 18px;
     }
+    #welcome {
+        display: block;
+    }
     .site-logo-header {
         width: 20%;
     }

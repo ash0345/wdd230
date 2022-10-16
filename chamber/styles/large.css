@@ -2,6 +2,9 @@
     body {
         max-width: 1200px;
     }
+    #welcome {
+        font-size: 1.3em;
+    }
     .hide {
         display:inline;
     }
