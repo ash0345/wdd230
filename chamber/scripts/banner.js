@@ -1,9 +1,12 @@
-const todaysdate = new Date();
-const day = todaysdate.getDay();
+const date = new Date();
+const day = date.getDay();
 
-function bannerBar(date) {
-    if (date = '6') {
-        document.getElementById("nav-bar").classList.hide("hidden");
+let weekDay;
+
+function bannerBar(weekDay) {
+    let message;
+    if (weekDay != 1 && weekDay != 2) {
+        message = document.getElementById("welcome").classList.hide("hidden");
     }
 }
 bannerBar(day);
