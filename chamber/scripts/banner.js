@@ -1,12 +1,10 @@
 const date = new Date();
 const day = date.getDay();
+const message = document.querySelector('#welcome');
 
-let weekDay;
-
-function bannerBar(weekDay) {
-    let message;
-    if (weekDay != 1 && weekDay != 2) {
-        message = document.getElementById("welcome").classList.hide("hidden");
-    }
+if (day == 1 || day == 2) {
+    message.textContent = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.';
 }
-bannerBar(day);
+else {
+    message.remove();
+}
