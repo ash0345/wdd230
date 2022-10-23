@@ -148,6 +148,32 @@ nav a:hover {
     width: 18%;
 }
 
+.cloudy {
+    margin-left: 10px;
+}
+
+.wind-speed {
+    margin-left: -10px;
+}
+
+.temperature {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.news {
+    flex-direction: column;
+}
+
+.news h3 {
+    margin: 10px;
+}
+
+.news p {
+    margin-left: 10px;
+    margin: 10px;
+}
+
 .spotlights {
     width: 100%;
     border: 1px solid rgba(0,0,0,.5);
@@ -164,6 +190,27 @@ section div {
     padding: 55px 0;
     margin: 10px;
     justify-content: center;
+}
+
+.surf-lessons, .tutoring {
+    flex-direction: column;
+    align-items: center;
+}
+
+.surf-lessons h3 {
+    margin-bottom: 8px;
+}
+
+.surf-lessons p {
+    margin-top: 8px;
+}
+
+.tutoring h3 {
+    margin-bottom: 8px;
+}
+
+.tutoring p {
+    margin-top: 8px;
 }
 
 section .div-3 {
