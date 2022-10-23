@@ -47,10 +47,10 @@
     .weather p {
         align-items: flex-end;
     }
-    .hero, .event,
+    /* .hero, .event,
     .weather, .news, .join {
         height: 150px;
-    }
+    } */
     section div {
         width: 50%;
         height: 150px;

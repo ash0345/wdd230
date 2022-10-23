@@ -30,28 +30,33 @@
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </nav>
-                    <a href="https://www.facebook.com/"><img class="facebook" src="images/facebook-logo.png" alt="facebook logo link"></a>
-                    <a href="https://www.instagram.com/"><img class="instagram" src="images/instagram-logo.png" alt="instagram logo link"></a>
+                    <a href="https://www.facebook.com/"><img class="facebook" src="images/facebook-logo.webp" alt="facebook logo link"></a>
+                    <a href="https://www.instagram.com/"><img class="instagram" src="images/instagram-logo.jpg" alt="instagram logo link"></a>
                 </div>
             </header>
             <main>
                 <div class="home-grid">
                     <div class="hero">
-                        <img class="hero-image" src="images/wdd230-org.jpg" alt="picture of a business meeting">
+                        <picture class="hero-image">
+                            <source media="(max-width: 300px)" src="images/small_300.jpg">
+                            <source media="(max-width: 799px)" src="images/medium_500.jpg">
+                            <source media="(min-width: 800px)" src="images/large_600.jpg">
+                            <img src="images/wdd230-org.jpg" alt="picture of a business meeting">
+                        </picture>
                         <!-- <img class="fruit" src="images/fruit-img.jpeg" alt="picture of colorful fruit"> -->
                         <p>Join our club!</p>
                     </div>
                     <div class="event">
                         <h3>Fall Ball</h3>
-                        <img class="pumpkin" src="images/pumpkin.png" alt="cartoon orange pumpkin">
+                        <img class="pumpkin" src="images/pumpkin.webp" alt="cartoon orange pumpkin">
                         <p>Come join us to learn more about one another and dance the night away!</p>
                     </div>
                     <div class="weather">
-                        <img class="weather-icon" src="images/weather-icon.png" alt="Weather icon of the sun behind a cloud">
+                        <img class="weather-icon" src="images/weather-icon.webp" alt="Weather icon of the sun behind a cloud">
                         <p>Partly Cloudy</p>
                         <span class="temperature">8&deg;C</span>
-                        <span class="wind-speed">5.5 km/h</span>
-                        <span class="windchill"></span>
+                        <span class="wind-speed">Wind Speed: 5.5 km/h</span>
+                        <p>Wind Chill: <span class="windchill">Wind Chill: </span></p>
                     </div>
                     <div class="news">
                         <h3>Brand New Elementary Playground</h3>
@@ -65,18 +70,18 @@
                     </div>
                     <section class="spotlights">
                         <div>
-                            <h3>Spotlight 1</h3>
-                            <img src="images/placeholder-image.png" alt="image placeholder">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h3>Surf Lessons</h3>
+                            <img src="images/surf.webp" alt="surfing clip art">
+                            <p>Contact (808)888-8888 for more information</p>
                         </div>
                         <div>
-                            <h3>Spotlight 2</h3>
-                            <img src="images/placeholder-image.png" alt="image placeholder">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h3>Free Tutoring Available</h3>
+                            <img src="images/tutor.webp" alt="paper and pencil clipart">
+                            <p>Tutoring available for grades 6-12. For more info, call or text (808)888-8888.</p>
                         </div>
                         <div class="div-3">
                             <h3>Spotlight 3</h3>
-                            <img src="images/placeholder-image.png" alt="image placeholder">
+                            <img src="images/placeholder-image.webp" alt="image placeholder">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </section>
@@ -85,7 +90,7 @@
         </div>
         <footer>
             <div class="footer-content-1" >
-                <img class="site-logo-footer" src="../Lesson3/images/logo.png" alt="Hilo Chamber of Commerce Logo">
+                <img class="site-logo-footer" src="images/logo.webp" alt="Hilo Chamber of Commerce Logo">
                 <p>Find us in Downtown Hilo, Hawaii</p>
                 <p class="email">info@hilochamber.org</p>
                 <a class="map" href="https://www.google.com/maps/place/Hilo,+HI+96720/@19.686598,-155.0899345,12z/data=!3m1!4b1!4m5!3m4!1s0x79524b5a6c97dec9:0xc15ba900330c15c6!8m2!3d19.7216023!4d-155.084887">📍 Map</a>
