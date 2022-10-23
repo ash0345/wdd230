@@ -140,8 +140,12 @@ nav a:hover {
     padding: 5px;
 }
 
-.hero-image {
-    width: 60%;
+.hero {
+    flex-direction: column;
+}
+
+.hero-image img{
+    width: 100%;
 }
 
 .pumpkin {
