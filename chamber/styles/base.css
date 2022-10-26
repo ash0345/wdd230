@@ -222,26 +222,24 @@ section .div-3 {
 
 /* DISCOVER */
 
-.image-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px;
-}
-
 .images {
     border: 1px solid rgba(0,0,0,.5);
     background-color: rgba(0,0,0,.1);
     margin-bottom: 10px;
     margin-top: 10px;
     padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .images img {
-    width: 100%;
+    width: 50%;
 }
 
-.visits {
-    color: #2f4550;
+.img-2 {
+    flex-direction: row-reverse;
 }
 
 /* FOOTER */

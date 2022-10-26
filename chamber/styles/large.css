@@ -92,4 +92,15 @@
         width: 92%;
         height: -webkit-fill-available;
     }
+    .image-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px
+    }
+    .images {
+        display: inline;
+    }
+    .images img {
+        width: 100%;
+    }
 }

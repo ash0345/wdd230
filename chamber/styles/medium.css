@@ -63,6 +63,13 @@
         justify-content: center;
         padding: 5px;
     }
+    .images img {
+        width: 30%;
+    }
+    /* .image-grid {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    } */
     .footer-content-1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
