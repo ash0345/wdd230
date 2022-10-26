@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Hilo Chamber</title>
+    <meta name="description" content="Chamber of Commerce site Discover page for Ashley Anglesey in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <span id="welcome"></span>
+            <img class="site-logo-header" src="images/logo.webp" alt="Hilo Chamber of Commerce Logo">
+            <h1>Hilo Chamber of Commerce</h1>
+            <div class="header-grid">
+                <span class="date"></span>
+                <nav>
+                    <button onclick="toggleMenu()">&#9776;</button>
+                    <ul id="nav-bar" class="hide">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="#">Directory</a></li>
+                        <li><a href="#">Join</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="https://www.facebook.com/"><img class="facebook" src="images/facebook-logo.webp" alt="facebook logo link"></a>
+                <a href="https://www.instagram.com/"><img class="instagram" src="images/instagram-logo.jpg" alt="instagram logo link"></a>
+            </div>
+        </header>
+        <main>
+            <h2>Discover More About Hilo Hawaii</h2>
+            <p>Hilo is full of sacred areas. People came to Hilo around 1100 AD. 
+                They set up fishing spots and built up the land. Many of the fish 
+                ponds are very sacred and not for swimming. Hawaiian culture 
+                is all about showing your gratitude to the land. They fish and 
+                farm and are very grateful for the food the land has provided for 
+                them. Hilo is a very creative area full of many centers for the arts. 
+                Hula, pottery, paddling and many other fun and creative 
+                activities. Hilo is in the jungle of Hawaii. Most beaches are 
+                black sand and cold water. There are so many waterfalls that most 
+                have not even been found yet.</p>
+            <div class="image-grid">
+                <div class="images">
+                    <img src="images/4mile.jpg" alt="4 mile beach in hilo">
+                    <p>This is a very popular beach in Hilo, Hawaii. It is known 
+                        for its light blue waters and many turtles. A beautiful 
+                        jungle entrance leads you through the jungle to an amazing 
+                        swimming spot.</p>
+                </div>
+                <div class="images">
+                    <img src="images/coconut-island.jpg" alt="coconut island beach">
+                    <p>Coconut Island is a small island located in Hilo bay waters. 
+                        Many local kids enjoy this island because they can jump off 
+                        of the 20 ft tower at one end of the island.</p>
+                </div>
+                <div class="images">
+                    <img src="images/hilo-bay.jpg" alt="far away view of hilo bay">
+                    <p>Hilo Bay took 22 years to build. It was finished in 1930 to 
+                        help sheild the boats in the bay from the rough ocean waves.</p>
+                </div>
+                <div class="images">
+                    <img src="images/liliokalani.jpg" alt="a bridge in lili'uokalani gardens">
+                    <p>The Lili'uokalani gardens were named after the last ruling 
+                        monarch in Hawaii, Queen Lili'uokalani. The park is full of 
+                        beautiful japanese architecture.</p>
+                </div>
+                <div class="images">
+                    <img src="images/rainbow-falls.jpg" alt="rainbow falls surrounded by cliff and trees">
+                    <p>Rainbow falls is a waterfall that falls over a lava cave known 
+                        in Hawaiian legends as the home of the goddess Hina. It is 
+                        called rainbow falls becuase most mornings, the mist from the 
+                        falls will create a rainbow. Rainbow falls is part of the 
+                        Wailuku River.</p>
+                </div>
+            </div>
+            <span id="visits">Visits</span>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-content-1" >
+            <img class="site-logo-footer" src="images/logo.webp" alt="Hilo Chamber of Commerce Logo">
+            <p>Find us in Downtown Hilo, Hawaii</p>
+            <p class="email">info@hilochamber.org</p>
+            <a class="map" href="https://www.google.com/maps/place/Hilo,+HI+96720/@19.686598,-155.0899345,12z/data=!3m1!4b1!4m5!3m4!1s0x79524b5a6c97dec9:0xc15ba900330c15c6!8m2!3d19.7216023!4d-155.084887">📍 Map</a>
+        </div>
+        <span class="line"></span>
+        <div class="footer-content-2" >
+            &copy; <span id="year"></span> Hilo Chamber | Ashley Anglesey | WDD 230 Project
+            <h5 class="modDate">Last Update: <span id="update"></span></h5>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="../time.js"></script>
+    <script src="scripts/banner.js"></script>
+</body>
+</html>
