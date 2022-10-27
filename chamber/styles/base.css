@@ -230,6 +230,10 @@ section .div-3 {
 
 /* DISCOVER */
 
+.images[data-src] {
+    filter: blur(0.2em);
+}
+
 .images {
     border: 1px solid rgba(0,0,0,.5);
     background-color: rgba(0,0,0,.1);
@@ -240,6 +244,9 @@ section .div-3 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    filter: blur(0em);
+    transition: filter 0.5s;
 }
 
 .images img {
