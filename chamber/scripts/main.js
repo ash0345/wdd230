@@ -42,29 +42,31 @@ else {
 
 const lastVisit = window.localStorage.getItem('lastVisitDate');
 const lastVisitDate = lastVisit;
-const visits = document.querySelector('#visits');
+const current = new Date();
 
-const setLast = () => {
-  const current = new Date();
+const setLast = (current) => {
   localStorage.setItem('lastVisitDate', current);
 }
 
-const calculate = () => {
+const calculate = (current, lastVisitDate) => {
   const difference = current - lastVisitDate;
   return Math.floor(difference);
 }
 
-const print = () => {
-  if (!lastVisitDate) {
+const print = (current, lastVisit) => {
+  const visits = document.querySelector('#visits');
+  const lastVisitDate = lastVisit;
+
+  if (lastVisitDate) {
     visits.textContent = `This is your first visit!`;
-    setLast();
-    return;
+    setLast(current);
+    
   } else {
-    const daysBetween = calculate();
-    setLast();
+    const daysBetween = calculate(current, lastVisitDate);
+    setLast(current);
   
     visits.textContent = `${daysBetween} days from your last visit`;
   }
 }
 
-print();
+print(current, lastVisitDate);

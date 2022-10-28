@@ -235,8 +235,8 @@ section .div-3 {
 }
 
 .images {
-    border: 1px solid rgba(0,0,0,.5);
-    background-color: rgba(0,0,0,.1);
+    /* border: 1px solid rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.1); */
     margin-bottom: 10px;
     margin-top: 10px;
     padding: 5px;
@@ -256,6 +256,23 @@ section .div-3 {
 .img-2 {
     flex-direction: row-reverse;
 }
+
+.number {
+    visibility: hidden;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: #fff;
+    opacity: 0;
+    font-size: 40px;
+
+    transition: opacity .2s, visibility .2s; */
+}
+/* .images:hover .number {
+    visibility: visible;
+    opacity: 1;
+} */
 
 /* FOOTER */
 
