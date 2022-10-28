@@ -98,13 +98,17 @@
     }
     .image-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        gap: 10px
-    }
-    .images {
-        display: inline;
-    }
+        grid-template-columns: 2fr 1fr;
+    } /* 
     .images img {
         width: 100%;
+    } */
+    .images {
+        flex-direction: column;
+        grid-column: 2/3;
+    }
+    .discover-p {
+        grid-column: 1/2;
+        padding: 10px;
     }
 }

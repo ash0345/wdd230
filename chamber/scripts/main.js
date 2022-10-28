@@ -37,3 +37,34 @@ else {
         loadImages(img);
    });
 }
+
+// visits
+
+const lastVisit = window.localStorage.getItem('lastVisitDate');
+const lastVisitDate = lastVisit;
+const visits = document.querySelector('#visits');
+
+const setLast = () => {
+  const current = new Date();
+  localStorage.setItem('lastVisitDate', current);
+}
+
+const calculate = () => {
+  const difference = current - lastVisitDate;
+  return Math.floor(difference);
+}
+
+const print = () => {
+  if (!lastVisitDate) {
+    visits.textContent = `This is your first visit!`;
+    setLast();
+    return;
+  } else {
+    const daysBetween = calculate();
+    setLast();
+  
+    visits.textContent = `${daysBetween} days from your last visit`;
+  }
+}
+
+print();

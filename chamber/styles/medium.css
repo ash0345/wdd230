@@ -66,10 +66,9 @@
     .images img {
         width: 30%;
     }
-    /* .image-grid {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    } */
+    .images img:hover {
+        box-shadow: 0 0 50px #333;
+    }
     .footer-content-1 {
         display: grid;
         grid-template-columns: 1fr 1fr;

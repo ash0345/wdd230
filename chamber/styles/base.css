@@ -253,10 +253,6 @@ section .div-3 {
     width: 50%;
 }
 
-.images img:hover {
-    box-shadow: 0 0 50px #333;
-}
-
 .img-2 {
     flex-direction: row-reverse;
 }
