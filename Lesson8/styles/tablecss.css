@@ -1,28 +1,40 @@
 html {
     font-family: sans-serif;
 }
-  
+
 table {
     border-collapse: collapse;
     border: 2px solid rgb(200,200,200);
     letter-spacing: 1px;
     font-size: 0.8rem;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 td, th {
-    border: 1px solid rgb(190,190,190);
+    border: 1px solid rgb(117, 117, 117);
     padding: 10px 20px;
 }
   
 th {
-    background-color: rgb(235,235,235);
+    background-color: rgb(237, 158, 158);
 }
   
+.sales {
+    background-color: rgb(234, 128, 128);
+    color: white;
+    font-size: medium;
+}
+
 td {
     text-align: center;
 }
-  
+
+table tr:nth-child(4) td:nth-child(2) {
+    background-color: rgb(234, 128, 128);
+    color: white;
+}
+
 tr:nth-child(even) td {
     background-color: rgb(260,260,260);
 }
@@ -34,5 +46,6 @@ tr:nth-child(odd) td {
 caption {
     padding: 10px;
     caption-side: bottom;
+    color: rgb(237, 158, 158);
 }
   
