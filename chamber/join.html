@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Hilo Chamber</title>
+    <meta name="description" content="Chamber of Commerce site Discover page for Ashley Anglesey in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <span id="welcome"></span>
+            <img class="site-logo-header" src="images/logo.webp" alt="Hilo Chamber of Commerce Logo">
+            <h1>Hilo Chamber of Commerce</h1>
+            <div class="header-grid">
+                <span class="date"></span>
+                <nav>
+                    <button onclick="toggleMenu()">&#9776;</button>
+                    <ul id="nav-bar" class="hide">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="#">Directory</a></li>
+                        <li><a href="#">Join</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="https://www.facebook.com/"><img class="facebook" src="images/facebook-logo.webp" alt="facebook logo link"></a>
+                <a href="https://www.instagram.com/"><img class="instagram" src="images/instagram-logo.jpg" alt="instagram logo link"></a>
+            </div>
+        </header>
+        <main>
+            <form method="get" action="../Form-start/thanks.html">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Business Title <input type="text" name="title" minlength="7" pattern=" ^[a-zA-Z]+[a-zA-Z0-9-_ ]*[a-zA-Z0-9]$"></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="example@gmail.com" required></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="18085556487" required></label>
+                    <label class="top">Company Name <input type="text" name="compName" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <label class="sbs"><input type="radio" name="membership" value="none"> None</label>
+                    <label class="sbs"><input type="radio" name="membership" value="np"> NP Membership(Non Profit-No Fee)</label>
+                    <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                    <label class="top"><textarea type="text" name="description"></textarea> Business Description</label>
+                    <!-- hidden field with date and time -->
+                </fieldset>
+
+            </form>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-content-1" >
+            <img class="site-logo-footer" src="images/logo.webp" alt="Hilo Chamber of Commerce Logo">
+            <p>Find us in Downtown Hilo, Hawaii</p>
+            <p class="email">info@hilochamber.org</p>
+            <a class="map" href="https://www.google.com/maps/place/Hilo,+HI+96720/@19.686598,-155.0899345,12z/data=!3m1!4b1!4m5!3m4!1s0x79524b5a6c97dec9:0xc15ba900330c15c6!8m2!3d19.7216023!4d-155.084887">📍 Map</a>
+        </div>
+        <span class="line"></span>
+        <div class="footer-content-2" >
+            &copy; <span id="year"></span> Hilo Chamber | Ashley Anglesey | WDD 230 Project
+            <h5 class="modDate">Last Update: <span id="update"></span></h5>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="../time.js"></script>
+    <script src="scripts/banner.js"></script>
+</body>
+</html>
