@@ -286,9 +286,12 @@ form fieldset {
     border: 1px solid #095b71;
     border-radius: 10px;
     padding: .5rem 2%;
+    width: 100%;
+    max-width: 22rem;
 }
 
 form legend {
+    font-size: 20px;
     color: #095b71;
     margin: 0 1rem;
     padding: 0 .5rem;
@@ -301,9 +304,7 @@ form label.top {
 }
 
 form label.top input, 
-form label.top select,
 form label.top textarea {
-    -webkit-appearance: none;
     display: block;
     font-size: 16px;
     border: solid 1px #999;
@@ -321,7 +322,7 @@ form label.top textarea {
 
 form label.sbs {
     display: block;
-    padding: .75rem;
+    padding: .5rem;
     color: #555;
 }
 
@@ -342,6 +343,12 @@ form label.top input:required {
 
 form label.top input:required:valid {
     border-left: green solid 6px;
+}
+
+/* thanks */
+
+h1#thanks {
+    margin-top: 20px;
 }
 
 /* FOOTER */

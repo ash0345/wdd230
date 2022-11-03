@@ -59,11 +59,16 @@
         justify-content: center;
         padding: 5px;
     }
+    /* discover */
     .images img {
         width: 40%;
     }
     .images img:hover {
         box-shadow: 0 0 50px #333;
+    }
+    /* join */
+    form {
+        margin-right: auto;
     }
     .footer-content-1 {
         display: grid;
