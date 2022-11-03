@@ -112,4 +112,17 @@
         /* grid-column: 1/2; */
         padding: 10px;
     }
+    /* join */
+    .memberships {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .memberships h2 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .memberships li {
+        list-style: none;
+        grid-column: 2/3;
+    }
 }

@@ -66,6 +66,26 @@
     .images img:hover {
         box-shadow: 0 0 50px #333;
     }
+    /* join */
+   
+    .memberships {
+        display: grid;
+        margin-top: 2rem;
+        border: 1px solid #095b71;
+        border-radius: 10px;
+        padding: .5rem 2%;
+        flex: left;
+        width: 49%;
+    }
+    .memberships li {
+        list-style: none;
+    }
+    form {
+        margin: 2rem 0 0 auto;
+        width: 49%;
+    }
+    
+    /* footer */
     .footer-content-1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
