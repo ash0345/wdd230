@@ -281,7 +281,6 @@ section .div-3 {
 }
 
 form {
-    text-align: left;
     font-size: 16px;
     border: 1px solid #095b71;
     border-radius: 10px;
@@ -291,6 +290,7 @@ form {
 }
 
 form fieldset {
+    text-align: left;
     margin: 2rem auto;
     border: 1px solid #095b71;
     border-radius: 10px;

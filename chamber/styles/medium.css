@@ -68,20 +68,26 @@
     }
     /* join */
    
+    .join-page {
+        display: flex;
+    }
+
     .memberships {
+        flex: 1;
         display: grid;
         margin-top: 2rem;
         border: 1px solid #095b71;
         border-radius: 10px;
         padding: .5rem 2%;
-        flex: left;
         width: 49%;
+        margin-right: 20px;
     }
     .memberships li {
         list-style: none;
     }
     form {
-        margin: 2rem 0 0 auto;
+        flex: 1;
+        text-align: center;
         width: 49%;
     }
     
