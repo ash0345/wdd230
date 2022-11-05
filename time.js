@@ -14,8 +14,8 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 document.querySelector(".date").textContent = fulldateUK;
 
 // form date
-document.querySelector("#date").textContent = Update;
-document.querySelector("#time").textContent = Update;
+document.getElementById("#date") = Update;
+document.getElementById("#time") = Update;
 
 // const day = todaysdate.getDate();
 // const month = todaysdate.getMonth() + 1;
