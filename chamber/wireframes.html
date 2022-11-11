@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hilo Chamber of Commerce</title>
+        <meta name="description" content="Chamber of Commerce site home page for Ashley Anglesey in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+    </head>
+    <body>
+        <div id="content">
+            <header>
+                <span id="welcome"></span>
+                <img class="site-logo-header" src="images/logo.webp" alt="Hilo Chamber of Commerce Logo">
+                <h1>Hilo Chamber of Commerce</h1>
+                <div class="header-grid">
+                    <span class="date"></span>
+                    <nav>
+                        <button onclick="toggleMenu()">&#9776;</button>
+                        <ul id="nav-bar" class="hide">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="discover.html">Discover</a></li>
+                            <li><a href="#">Directory</a></li>
+                            <li><a href="#">Join</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <a href="https://www.facebook.com/"><img class="facebook" src="images/facebook-min.jpg" alt="facebook logo link"></a>
+                <a href="https://www.instagram.com/"><img class="instagram" src="images/instagram-min.jpg" alt="instagram logo link"></a>
+                </div>
+            </header>
+            <main>
+                <h1>Wireframes</h1>
+                <h2>Small</h2>
+                <img src="images/small-wireframe.png" alt="Small wireframe for the Hilo Chamber">
+                <h2>Medium</h2>
+                <img src="images/medium-wireframe.png" alt="Medium wireframe for the Hilo Chamber">
+                <h2>Large</h2>
+                <img src="images/large-wireframe.png" alt="Large wireframe for the Hilo Chamber">
+            </main>
+        </div>
+        <footer>
+            <div class="footer-content-1" >
+                <img class="site-logo-footer" src="images/logo.webp" alt="Hilo Chamber of Commerce Logo">
+                <p>Find us in Downtown Hilo, Hawaii</p>
+                <p class="email">info@hilochamber.org</p>
+                <a class="map" href="https://www.google.com/maps/place/Hilo,+HI+96720/@19.686598,-155.0899345,12z/data=!3m1!4b1!4m5!3m4!1s0x79524b5a6c97dec9:0xc15ba900330c15c6!8m2!3d19.7216023!4d-155.084887">📍 Map</a>
+            </div>
+            <span class="line"></span>
+            <div class="footer-content-2" >
+                &copy; <span id="year"></span> Hilo Chamber | Ashley Anglesey | WDD 230 Project
+                <p class="modDate">Last Update: <span id="update"></span></p>
+            </div>
+        </footer>
+        <script src="scripts/main.js"></script>
+        <script src="../time.js"></script>
+        <script src="scripts/banner.js"></script>
+        <script src="scripts/windchill.js"></script>
+    </body>
+</html>
