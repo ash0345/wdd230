@@ -8,6 +8,14 @@ img {
     width: 25%;
 }
 
+@font-face {
+    font-family: 'Lora', 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.googleapis.com/css2?family=Lora&family=Source+Sans+Pro&display=swap);
+    font-display: swap;
+}
+
 h1, h2, h3, h4 {
     font-family: 'Source Sans Pro', Arial, sans-serif;
 }
@@ -259,20 +267,7 @@ section .div-3 {
 
 .number {
     visibility: hidden;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    color: #fff;
-    opacity: 0;
-    font-size: 40px;
-
-    transition: opacity .2s, visibility .2s; */
 }
-/* .images:hover .number {
-    visibility: visible;
-    opacity: 1;
-} */
 
 /* FORM/JOIN */
 

@@ -41,32 +41,60 @@ else {
 // visits
 
 const lastVisit = window.localStorage.getItem('lastVisitDate');
-const lastVisitDate = lastVisit;
 const current = new Date();
-
-const setLast = (current) => {
-  localStorage.setItem('lastVisitDate', current);
-}
+window.localStorage.setItem('lastVisitDate', current);
 
 const calculate = (current, lastVisitDate) => {
   const difference = current - lastVisitDate;
   return Math.floor(difference);
 }
 
-const print = (current, lastVisit) => {
-  const visits = document.querySelector('#visits');
-  const lastVisitDate = lastVisit;
+const $visits = document.querySelector('#visits');
+const daysBetween = calculate(current, lastVisit);
 
-  if (lastVisitDate) {
-    visits.textContent = `This is your first visit!`;
-    setLast(current);
-    
-  } else {
-    const daysBetween = calculate(current, lastVisitDate);
-    setLast(current);
-  
-    visits.textContent = `${daysBetween} days from your last visit`;
-  }
+if (daysBetween === 0) {
+  $visits.textContent = `This is your first visit!`;
+} else {
+  $visits.textContent = `${daysBetween} days from your last visit`;
 }
 
-print(current, lastVisitDate);
+
+
+
+
+
+
+
+
+
+
+// const lastVisit = window.localStorage.getItem('lastVisitDate');
+// const lastVisitDate = lastVisit;
+// const current = new Date();
+
+// const setLast = (current) => {
+//   localStorage.setItem('lastVisitDate', current);
+// }
+
+// const calculate = (current, lastVisitDate) => {
+//   const difference = current - lastVisitDate;
+//   return Math.floor(difference);
+// }
+
+// const print = (current, lastVisit) => {
+//   const visits = document.querySelector('#visits');
+//   const lastVisitDate = lastVisit;
+
+//   if (lastVisitDate) {
+//     visits.textContent = `This is your first visit!`;
+//     setLast(current);
+    
+//   } else {
+//     const daysBetween = calculate(current, lastVisitDate);
+//     setLast(current);
+  
+//     visits.textContent = `${daysBetween} days from your last visit`;
+//   }
+// }
+
+// print(current, lastVisitDate);

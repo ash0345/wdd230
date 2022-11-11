@@ -102,14 +102,12 @@
     }
     .images {
         flex-direction: row-reverse;
-        /* grid-column: 2/3; */
         margin: 5px;
     }
     .text{
         flex: 1;
     }
     .discover-p {
-        /* grid-column: 1/2; */
         padding: 10px;
     }
     /* join */
