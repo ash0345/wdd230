@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+}
+
+img {
+    width: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 30px #777;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding: 15px;
+    background-color: rgb(232, 232, 232);
+    box-shadow: 0 0 30px #777;
+    margin-bottom: 20px;
+}
+
+section {
+    background-color: #E6E6FA;
+    border: 2px solid #967bb6;
+    margin: 10px;
+}
+
+h1, h2 {
+    color: #8860b8;
+} 
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+p {
+    font-size: 1.2em;
+}
