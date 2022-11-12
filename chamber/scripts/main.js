@@ -78,6 +78,16 @@ function displayBusinesses(business) {
   let website = document.createElement('p');
   let membershipStatus = document.createElement('p');
   let portrait = document.createElement('img');
+
+  // set classes
+  card.setAttribute('class', 'card-section');
+  h2.setAttribute('class', 'business-name');
+  address.setAttribute('class', 'paragraph');
+  phone.setAttribute('class', 'paragraph');
+  website.setAttribute('class', 'paragraph');
+  membershipStatus.setAttribute('class', 'paragraph');
+  portrait.setAttribute('class', 'portrait');
+
   
   // Change the textContent property of the h2 element to contain the business name
   h2.textContent = `${business.name}`;

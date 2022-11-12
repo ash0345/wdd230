@@ -354,6 +354,37 @@ h1#thanks {
     margin-top: 20px;
 }
 
+/* Directory */
+
+.portrait {
+    width: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 30px #777;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.card-section {
+    box-shadow: 0 0 30px #777;
+    background-color: #E6E6FA;
+    border: 2px solid #967bb6;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #8860b8;
+}
+
+p {
+    font-size: 1.2em;
+}
+
 /* FOOTER */
 
 footer {
