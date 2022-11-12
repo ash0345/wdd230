@@ -45,56 +45,64 @@ const current = new Date();
 window.localStorage.setItem('lastVisitDate', current);
 
 const calculate = (current, lastVisitDate) => {
-  const difference = current - lastVisitDate;
+  const difference = (current - lastVisitDate)/86400000;
   return Math.floor(difference);
 }
 
 const $visits = document.querySelector('#visits');
 const daysBetween = calculate(current, lastVisit);
 
-if (daysBetween === 0) {
+if (!daysBetween) {
   $visits.textContent = `This is your first visit!`;
 } else {
   $visits.textContent = `${daysBetween} days from your last visit`;
 }
 
+// json cards directory
 
+const requestJSON = $.getJSON('../json/data.json');
+const cards = document.querySelector('.cards');
 
+async function getBusinesses() {
+  const response = await fetch(requestJSON);
+  const data = await response.json();
+  data.businesses.forEach(business => { displayBusinesses(business) })
+}
 
-
-
-
-
-
-
-
-// const lastVisit = window.localStorage.getItem('lastVisitDate');
-// const lastVisitDate = lastVisit;
-// const current = new Date();
-
-// const setLast = (current) => {
-//   localStorage.setItem('lastVisitDate', current);
-// }
-
-// const calculate = (current, lastVisitDate) => {
-//   const difference = current - lastVisitDate;
-//   return Math.floor(difference);
-// }
-
-// const print = (current, lastVisit) => {
-//   const visits = document.querySelector('#visits');
-//   const lastVisitDate = lastVisit;
-
-//   if (lastVisitDate) {
-//     visits.textContent = `This is your first visit!`;
-//     setLast(current);
-    
-//   } else {
-//     const daysBetween = calculate(current, lastVisitDate);
-//     setLast(current);
+function displayBusinesses(business) {
+  // Create elements to add to the document
+  let card = document.createElement('section');
+  let h2 = document.createElement('h2');
+  let address = document.createElement('p');
+  let phone = document.createElement('p');
+  let website = document.createElement('p');
+  let membershipStatus = document.createElement('p');
+  let portrait = document.createElement('img');
   
-//     visits.textContent = `${daysBetween} days from your last visit`;
-//   }
-// }
+  // Change the textContent property of the h2 element to contain the business name
+  h2.textContent = `${business.name}`;
+  
+  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
+  portrait.setAttribute('src', business.image);
+  portrait.setAttribute('alt', `Logo of ${business.name}`);
+  portrait.setAttribute('loading', 'lazy');
 
-// print(current, lastVisitDate);
+  // Add address, phone, and website
+  address.textContent = `Address: ${business.address}`;
+  phone.textContent = `Phone Number: ${business.phone}`;
+  website.textContent =  `Website: ${business.website}`;
+  membershipStatus.textContent = `Membership Status: ${business.membership}`;
+  
+  // Add/append the section(card) with the h2 element
+  card.appendChild(portrait);
+  card.appendChild(h2);
+  card.appendChild(address);
+  card.appendChild(phone);
+  card.appendChild(website);
+  card.appendChild(membershipStatus);
+  
+  // Add/append the existing HTML div with the cards class with the section(card)
+  cards.appendChild(card);
+}
+
+console.log(getBusinesses());
