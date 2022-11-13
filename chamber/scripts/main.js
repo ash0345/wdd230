@@ -52,22 +52,24 @@ const calculate = (current, lastVisitDate) => {
 const $visits = document.querySelector('#visits');
 const daysBetween = calculate(current, lastVisit);
 
-if (!daysBetween) {
-  $visits.textContent = `This is your first visit!`;
-} else {
-  $visits.textContent = `${daysBetween} days from your last visit`;
+if ($visits) {
+  if (!daysBetween) {
+    $visits.textContent = `This is your first visit!`
+  } else {
+    $visits.textContent = `${daysBetween} days from your last visit`
+  }
 }
 
 // json cards directory
 
-const requestURL = 'https://www.npoint.io/docs/5aded29b66703102b44c';
-const cards = document.querySelector('.cards');
+const cards = document.querySelector(".cards");
 
 async function getBusinesses() {
-  const response = await fetch(requestURL);
+  const response = await fetch("https://www.npoint.io/docs/5aded29b66703102b44c");
   const data = await response.json();
-  data.businesses.forEach((business) => { displayBusinesses(business) })
-  console.log(data);
+  data.businesses.forEach((business) => {
+    displayBusinesses(business)
+  })
 }
 
 function displayBusinesses(business) {
@@ -97,7 +99,7 @@ function displayBusinesses(business) {
   portrait.setAttribute('alt', `Logo of ${business.name}`);
   portrait.setAttribute('loading', 'lazy');
 
-  // Add address, phone, and website
+  // Add address, phone, membership and website
   address.textContent = `Address: ${business.address}`;
   phone.textContent = `Phone Number: ${business.phone}`;
   website.textContent =  `Website: ${business.website}`;
@@ -115,4 +117,4 @@ function displayBusinesses(business) {
   cards.appendChild(card);
 }
 
-console.log(getBusinesses());
+getBusinesses();
