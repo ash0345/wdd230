@@ -40,7 +40,7 @@ else {
 
 // visits
 
-const lastVisit = window.localStorage.getItem('lastVisitDate');
+const lastVisit = new Date(window.localStorage.getItem('lastVisitDate'));
 const current = new Date();
 window.localStorage.setItem('lastVisitDate', current);
 
@@ -60,13 +60,14 @@ if (!daysBetween) {
 
 // json cards directory
 
-const requestJSON = $.getJSON('../json/data.json');
+const requestURL = 'https://www.npoint.io/docs/5aded29b66703102b44c';
 const cards = document.querySelector('.cards');
 
 async function getBusinesses() {
-  const response = await fetch(requestJSON);
+  const response = await fetch(requestURL);
   const data = await response.json();
-  data.businesses.forEach(business => { displayBusinesses(business) })
+  data.businesses.forEach((business) => { displayBusinesses(business) })
+  console.log(data);
 }
 
 function displayBusinesses(business) {
@@ -87,7 +88,6 @@ function displayBusinesses(business) {
   website.setAttribute('class', 'paragraph');
   membershipStatus.setAttribute('class', 'paragraph');
   portrait.setAttribute('class', 'portrait');
-
   
   // Change the textContent property of the h2 element to contain the business name
   h2.textContent = `${business.name}`;

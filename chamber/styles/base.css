@@ -376,12 +376,12 @@ h1#thanks {
     margin: 10px;
 }
 
-h2 {
+.business-name {
     font-size: 1.8em;
     color: #8860b8;
 }
 
-p {
+.paragraph {
     font-size: 1.2em;
 }
 
