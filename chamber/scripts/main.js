@@ -62,13 +62,15 @@ if ($visits) {
 
 // json cards directory
 
+const requestURL = "https://www.npoint.io/docs/5aded29b66703102b44c";
 const cards = document.querySelector(".cards");
 
 async function getBusinesses() {
-  const response = await fetch("https://www.npoint.io/docs/5aded29b66703102b44c");
+  const response = await fetch(requestURL);
   const data = await response.json();
   data.businesses.forEach((business) => {
-    displayBusinesses(business)
+    displayBusinesses(business);
+    console.log(business);
   })
 }
 
