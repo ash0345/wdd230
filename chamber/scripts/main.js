@@ -104,7 +104,7 @@ function displayBusinesses(business) {
   // Add address, phone, membership and website
   address.textContent = `${business.address}`;
   phone.textContent = `${business.phone}`;
-  website.textContent =  `${business.website}`;
+  website.innerHTML =  `<a href="${business.website}">${business.website}</a>`;
   membershipStatus.textContent = `${business.membership} Membership`;
   
   // Add/append the section(card) with the h2 element
