@@ -54,6 +54,9 @@
         width: 99%;
         height: 97%;
     }
+    .hero-image img {
+        padding-top: 40px;
+    }
     .fruit {
         width: 100%;
     }
@@ -71,11 +74,15 @@
         grid-column: 3/4;
         grid-row: 1/4;
         flex-direction: column;
+        height: 98%;
     }
     .join {
         grid-column: 1/2;
         grid-row: 3/4;
         margin-bottom: 10px;
+    }
+    .join p {
+        margin-top: 40px;
     }
     .event {
         grid-column: 1/2;
@@ -95,7 +102,7 @@
     }
     section div {
         width: 92%;
-        height: -webkit-fill-available;
+        height: 100%;
     }
     /* discover */
     .images img {

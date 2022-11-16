@@ -153,10 +153,11 @@ nav a:hover {
 
 .hero-image img{
     width: 100%;
+    padding: 10px;
 }
 
 .hero h2 {
-    margin-top: 35px;
+    margin-top: 5px;
 }
 
 .pumpkin {
