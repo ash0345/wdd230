@@ -92,6 +92,8 @@
     }
     .memberships ul li {
         list-style: none;
+        width: 70%;
+        margin: 0 auto;
     }
     form {
         flex: 1;
