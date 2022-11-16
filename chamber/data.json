@@ -4,73 +4,73 @@
       "name": "Two Ladies Kitchen",
       "address": "274 Kilauea Ave, Hilo, HI 96720",
       "phone": "(808) 961-4766",
-      "website": "https://www.facebook.com/twoladieskitchenorginal/",
+      "website": "www.website.com",
       "membership": "Gold",
       "image": "./images/two-ladies-logo.jpeg"
     },
     {
-        "name": "business",
-        "address": "2478 Hilo",
-        "phone": "(808)555-3833",
-        "website": "www.website.com",
-        "membership": "gold",
-        "image": "https://via.placeholder.com/150"
+        "name": "Kozmic Cones",
+        "address": "317 Waianuenue Ave, Hilo, HI 96720",
+        "phone": "(808) 935-6311",
+        "website": "https://kozmicconeshilo.com",
+        "membership": "Bronze",
+        "image": "./images/kozmic-logo.webp"
     },
     {
-        "name": "business",
-        "address": "2478 Hilo",
-        "phone": "(808)555-3833",
-        "website": "www.website.com",
-        "membership": "gold",
-        "image": "https://via.placeholder.com/150"
+        "name": "Daiso",
+        "address": "333 Kilauea Ave, Hilo, HI 96720",
+        "phone": "(808) 961-6405",
+        "website": "https://www.daisojapan.com",
+        "membership": "Silver",
+        "image": "./images/daiso-logo.png"
     },
     {
-        "name": "business",
-        "address": "2478 Hilo",
-        "phone": "(808)555-3833",
-        "website": "www.website.com",
-        "membership": "gold",
-        "image": "https://via.placeholder.com/150"
+        "name": "New Chiang Mai Thai Cuisine",
+        "address": "2870, 110 Kalakaua St, Hilo, HI 96720",
+        "phone": "(808)969-3777",
+        "website": "http://www.ncmhilo.com/",
+        "membership": "NP",
+        "image": "./images/new-chiang-logo.png"
     },
     {
-        "name": "business",
-        "address": "2478 Hilo",
-        "phone": "(808)555-3833",
-        "website": "www.website.com",
-        "membership": "gold",
-        "image": "https://via.placeholder.com/150"
+        "name": "Target",
+        "address": "391 Makaala St, Hilo, HI 96720",
+        "phone": "(808) 920-8605",
+        "website": "www.target.com",
+        "membership": "Silver",
+        "image": "./images/target-logo.png"
     },
     {
-        "name": "business",
-        "address": "2478 Hilo",
-        "phone": "(808)555-3833",
+        "name": "Vernas",
+        "address": "1765 Kamehameha Ave, Hilo, HI 96720",
+        "phone": "(808) 935-2776",
         "website": "www.website.com",
-        "membership": "gold",
-        "image": "https://via.placeholder.com/150"
+        "membership": "Bronze",
+        "image": "./images/verna-logo.jpeg"
     },
     {
-        "name": "business",
-        "address": "2478 Hilo",
-        "phone": "(808)555-3833",
-        "website": "www.website.com",
-        "membership": "gold",
-        "image": "https://via.placeholder.com/150"
+        "name": "Dairy Queen",
+        "address": "111 E Puainako St, Hilo, HI 96720",
+        "phone": "(808) 959-1017",
+        "website": "https://www.dairyqueen.com/",
+        "membership": "Bronze",
+        "image": "./images/dq-logo.png"
     },
     {
-        "name": "business",
-        "address": "2478 Hilo",
-        "phone": "(808)555-3833",
-        "website": "www.website.com",
-        "membership": "gold",
-        "image": "https://via.placeholder.com/150"
+        "name": "Claire's",
+        "address": "111 E Puainako St, Hilo, HI 96720",
+        "phone": "(808) 959-2075",
+        "website": "https://stores.claires.com/",
+        "membership": "Gold",
+        "image": "./images/claires-logo.png"
     },
     {
-        "name": "business",
-        "address": "2478 Hilo",
-        "phone": "(808)555-3833",
-        "website": "www.website.com",
-        "membership": "gold",
-        "image": "https://via.placeholder.com/150"
+        "name": "O'Reilly Auto Parts",
+        "address": "2100 Kanoelehua Ave, Hilo, HI 96720",
+        "phone": "(808) 959-1221",
+        "website": "https://oreillyauto.com/",
+        "membership": "Silver",
+        "image": "./images/oreilly-logo.png"
     }
   ]
 }
