@@ -1,12 +1,12 @@
 {
   "businesses": [
     {
-      "name": "business",
-      "address": "2478 Hilo",
-      "phone": "(808)555-3833",
-      "website": "www.website.com",
-      "membership": "gold",
-      "image": "https://via.placeholder.com/150"
+      "name": "Two Ladies Kitchen",
+      "address": "274 Kilauea Ave, Hilo, HI 96720",
+      "phone": "(808) 961-4766",
+      "website": "https://www.facebook.com/twoladieskitchenorginal/",
+      "membership": "Gold",
+      "image": "./images/two-ladies-logo.jpeg"
     },
     {
         "name": "business",

@@ -358,9 +358,9 @@ h1#thanks {
 /* Directory */
 
 .portrait {
-    width: 50%;
-    margin-bottom: 20px;
-    box-shadow: 0 0 30px #777;
+    width: 30%;
+    margin: 20px;
+    box-shadow: 0 0 20px #777;
 }
 
 .cards {
@@ -371,19 +371,20 @@ h1#thanks {
 }
 
 .card-section {
-    box-shadow: 0 0 30px #777;
-    background-color: #E6E6FA;
-    border: 2px solid #967bb6;
+    background-color: #e6f5f9;
+    border: 2px solid #095b71;
     margin: 10px;
 }
 
 .business-name {
-    font-size: 1.8em;
-    color: #8860b8;
+    font-size: 1.5em;
+    color: #095b71;
+    margin: 5px;
 }
 
 .paragraph {
-    font-size: 1.2em;
+    font-size: 1em;
+    margin: 10px;
 }
 
 /* FOOTER */

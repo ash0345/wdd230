@@ -62,7 +62,7 @@ if ($visits) {
 
 // json cards directory
 
-const requestURL = "https://www.npoint.io/docs/5aded29b66703102b44c";
+const requestURL = "https://ash0345.github.io/wdd230/chamber/data.json";
 const cards = document.querySelector(".cards");
 
 async function getBusinesses() {
@@ -102,10 +102,10 @@ function displayBusinesses(business) {
   portrait.setAttribute('loading', 'lazy');
 
   // Add address, phone, membership and website
-  address.textContent = `Address: ${business.address}`;
-  phone.textContent = `Phone Number: ${business.phone}`;
-  website.textContent =  `Website: ${business.website}`;
-  membershipStatus.textContent = `Membership Status: ${business.membership}`;
+  address.textContent = `${business.address}`;
+  phone.textContent = `${business.phone}`;
+  website.textContent =  `${business.website}`;
+  membershipStatus.textContent = `${business.membership} Membership`;
   
   // Add/append the section(card) with the h2 element
   card.appendChild(portrait);
