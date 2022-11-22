@@ -358,6 +358,10 @@ h1#thanks {
 
 /* Directory */
 
+.businesses {
+    padding-top: 20px;
+}
+
 .portrait {
     width: 30%;
     margin: 20px;
@@ -383,9 +387,50 @@ h1#thanks {
     margin: 5px;
 }
 
+#grid, #list {
+    padding: 15px;
+
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr;
+    /* height: 100px; */
+}
+
+.website {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.member {
+    grid-row: 2/3;
+}
+
 .paragraph {
     font-size: 1em;
     margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list section h2 {
+    margin-left: 20px;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list section img {
+	display: none;
 }
 
 /* FOOTER */

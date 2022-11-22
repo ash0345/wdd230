@@ -89,8 +89,8 @@ function displayBusinesses(business) {
   h2.setAttribute('class', 'business-name');
   address.setAttribute('class', 'paragraph');
   phone.setAttribute('class', 'paragraph');
-  website.setAttribute('class', 'paragraph');
-  membershipStatus.setAttribute('class', 'paragraph');
+  website.setAttribute('class', 'paragraph website');
+  membershipStatus.setAttribute('class', 'paragraph member');
   portrait.setAttribute('class', 'portrait');
   
   // Change the textContent property of the h2 element to contain the business name
@@ -120,3 +120,17 @@ function displayBusinesses(business) {
 }
 
 getBusinesses();
+
+// LIST / GRID
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+
+gridbutton.addEventListener("click", () => {
+	cards.classList.add("cards");
+	cards.classList.remove("list");
+});
+
+listbutton.addEventListener("click", () => {
+	cards.classList.add("list");
+	cards.classList.remove("cards");
+});

@@ -106,7 +106,21 @@
         text-align: center;
         width: 49%;
     }
-    
+    /* directory */
+    .list section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 100px;
+    }
+    .website {
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+    .member {
+        grid-column: 5/6;
+        grid-row: 1/2;
+    }
     /* footer */
     .footer-content-1 {
         display: grid;

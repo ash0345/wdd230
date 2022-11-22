@@ -128,4 +128,8 @@
     .memberships li {
         list-style: none;
     }
+    /* directory */
+    .list section {
+        padding-top: 20px;
+    }
 }
