@@ -21,7 +21,7 @@
         "address": "333 Kilauea Ave, Hilo, HI 96720",
         "phone": "(808) 961-6405",
         "website": "https://www.daisojapan.com",
-        "membership": "Silver",
+        "membership": "Gold",
         "image": "./images/daiso-logo.png"
     },
     {
@@ -45,7 +45,7 @@
         "address": "1765 Kamehameha Ave, Hilo, HI 96720",
         "phone": "(808) 935-2776",
         "website": "www.website.com",
-        "membership": "Bronze",
+        "membership": "Gold",
         "image": "./images/verna-logo.jpeg"
     },
     {
