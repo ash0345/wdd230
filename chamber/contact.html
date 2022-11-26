@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Hilo Chamber</title>
+    <meta name="description" content="Chamber of Commerce site Contact page for Ashley Anglesey in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <span id="welcome"></span>
+            <img class="site-logo-header" src="images/logo.webp" alt="Hilo Chamber of Commerce Logo">
+            <h1>Hilo Chamber of Commerce</h1>
+            <div class="header-grid">
+                <span class="date"></span>
+                <nav>
+                    <button onclick="toggleMenu()">&#9776;</button>
+                    <ul id="nav-bar" class="hide">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="https://www.facebook.com/"><img class="facebook" src="images/facebook-min.jpg" alt="facebook logo link"></a>
+                <a href="https://www.instagram.com/"><img class="instagram" src="images/instagram-min.jpg" alt="instagram logo link"></a>
+            </div>
+        </header>
+        <main class="contact-page">
+            <form class="contact-form" method="get" action="request.html">
+                <legend class="getInTouch">Get in touch</legend>
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="example@gmail.com" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="18085556487" required></label>
+                <label class="top">Business Title <input type="text" name="title" minlength="7" pattern=" ^[a-zA-Z]+[a-zA-Z0-9-_ ]*[a-zA-Z0-9]$"></label>
+                <label class="top">Company Name* <input type="text" name="compName" required></label>
+                <div class="memberQuestion">Are you a member?</div>
+                <label class="sbs"><input type="radio" name="membership" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="membership" value="no"> No</label>
+                <label class="sbs"><input type="radio" name="membership" value="not sure"> Not Sure</label>
+                <label class="top text-box">Questions or other information you would like to let us know about<textarea name="questions"></textarea></label>
+                <input type="hidden" id="date" name="date" value="CurrentTime"> 
+                <input type="hidden" id="time" name="time" value="CurrentDate">
+                <input type="submit" value="Send Request" class="submitBtn">
+            </form>
+            <div class="contactUs">
+                <h2 class="contact">Contact Us</h2>
+                <h3>Address</h3>
+                <p class="contact-p">789 Ponahawai St. Hilo, Hawaii</p>
+                <h3>Phone Number</h3>
+                <p class="contact-p">+1 (808)555-7823</p>
+                <h3>Email</h3>
+                <p class="contact-p email">hilochamber@gmail.com</p>
+                <fieldset class="availability">
+                    <h2 class="contact">Availability</h2>
+                    <p>Our offices are open Monday through Friday from 8a.m. to 4p.m. <br>For emergencies please send us an email and we will respond within 48 hours.</p>
+                </fieldset>
+                <h2 class="contact">Check out our membership levels!</h2>
+                <ul class="join-button">
+                    <li>                
+                        <a href="join.html">Membership Levels</a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-content-1" >
+            <img class="site-logo-footer" src="images/logo.webp" alt="Hilo Chamber of Commerce Logo">
+            <p>Find us in Downtown Hilo, Hawaii</p>
+            <p class="email">info@hilochamber.org</p>
+            <a class="map" href="https://www.google.com/maps/place/Hilo,+HI+96720/@19.686598,-155.0899345,12z/data=!3m1!4b1!4m5!3m4!1s0x79524b5a6c97dec9:0xc15ba900330c15c6!8m2!3d19.7216023!4d-155.084887">📍 Hilo, Hawaii</a>
+        </div>
+        <span class="line"></span>
+        <div class="footer-content-2" >
+            &copy; <span id="year"></span> Hilo Chamber | Ashley Anglesey | WDD 230 Project
+            <p class="modDate">Last Update: <span id="update"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/formtime.js"></script>
+    <script src="../time.js"></script>
+</body>
+</html>

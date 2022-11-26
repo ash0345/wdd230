@@ -121,6 +121,30 @@
         grid-column: 5/6;
         grid-row: 1/2;
     }
+    /* contact */
+    .contact-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact-form {
+        width: 94%;
+    }
+    .contactUs {
+        width: 94%;
+    }
+    p.email {
+        margin-bottom: 50px;
+    }
+    .contact {
+        margin-top: 50px;
+    }
+    .availability p {
+        margin-bottom: 40px;
+    }
+    ul.join-button {
+        height: 45px;
+        margin: 0 auto;
+    }
     /* footer */
     .footer-content-1 {
         display: grid;
