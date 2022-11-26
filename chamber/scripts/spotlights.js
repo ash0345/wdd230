@@ -1,5 +1,6 @@
 const requestURL = "https://ash0345.github.io/wdd230/chamber/data.json";
 const spotlights = document.querySelector(".spotlights");
+
 function shuffle(array) {
     let currentIndex = array.length,  randomIndex;
   
