@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game Score Card</title>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <h1>🎲 Game Card 🎲</h1>
+    <main>
+        <h3>Player 1</h3>
+        <div class="input-1">
+            <label>Enter Score<br>
+            <input id="score-1" type="number" placeholder="score" required></label>
+            <button class="button1" type=”submit”>Enter</button>
+        </div>
+        <div class="listcontainer1">
+            <ul class="list1">
+            </ul>
+        </div>
+        <span class="span-total1">Total:</span>
+        <h3>Player 2</h3>
+        <div class="input-2">
+            <label>Enter Score<br>
+            <input id="score-2" type="number" placeholder="score" required></label>
+            <button class="button2" type=”submit”>Enter</button>
+        </div>
+        <div class="listcontainer2">
+            <ul class="list2">
+            </ul>
+        </div>
+        <span class="span-total2">Total:</span>
+    </main>
+    <script src="scripts/game.js"></script>
+</body>
+</html>
