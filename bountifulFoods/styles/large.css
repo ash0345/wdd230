@@ -1,0 +1,25 @@
+@media only screen and (min-width: 1000px){
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .left {
+        grid-column: 1/2;
+    }
+    .right {
+        grid-column: 2/3;
+    }
+    h2.right {
+        grid-row: 1/2;
+    }
+    p.right {
+        grid-row: 2/6;
+    }
+    .left, .right {
+        margin: 10px;
+    }
+    .color-pallete {
+        width: 25%;
+    }
+}

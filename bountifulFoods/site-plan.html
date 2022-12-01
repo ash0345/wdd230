@@ -8,6 +8,9 @@
         <meta name="description" content="Site Plan for Ashley Anglesey in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
         <link href="https://fonts.googleapis.com/css2?family=Lora&family=Source+Sans+Pro&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
     </head>
 
     <body>
@@ -18,30 +21,33 @@
             </header>
             <nav>
                 <ul class="nav-bar">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="site-plan.html">Home</a></li>
                     <li><a href="target-audience.html">Target Audience</a></li>
                     <li><a href="color-scheme.html">Color Scheme</a></li>
                     <li><a href="typography.html">Typography</a></li>
                 </ul>
             </nav>
             <main>
-                <h2>Site Name</h2>
-                <p>My site name will be: Bountiful Foods.</p>
-                <h2>Site Purpose</h2>
-                <p>The purpose for this website is to support the local 
-                    businesses of Hawaii. We want to create opportunities 
-                    to further the interests of small businesses in Hilo. 
-                    We will use this website as a form of communication 
-                    to let businesses know when we have events so they 
-                    can attend and network.</p>
-                <h2>Domain Name</h2>
-                <p>The domain name of my site will be hilochamber.com.</p>
-                <h2>Logo</h2>
-                <img class="site-logo" src="images/logo.png" alt="Logo">
+                <div class="grid">
+                    <h2 class="left">Site Name</h2>
+                    <p class="left">My site name will be: Bountiful Foods.</p>
+                    <h2 class="left">Domain Name</h2>
+                    <p class="left">The domain name of my site will be bountifulfoods.com.</p>
+                    <h2 class="left">Logo</h2>
+                    <img class="site-logo left" src="" alt="Logo">
+                    <h2 class="right">Site Purpose</h2>
+                    <p class="right">The purpose for this website is to encourage healthy eating.
+                        We want to create opportunities to access healthy foods and recipes
+                        quicker and easier. We will have a page where each user can create their own 
+                        smoothies. We are a small business that specializes in organic 
+                        locally grown foods. The mission is to provide fresh and healthy 
+                        food options to the local population and to tourists visiting the 
+                        coastal areas of California. </p>
+                </div>
             </main>
         </div>
         <footer>
-            &copy; <span id="year"></span> | Ashley Anglesey | Hawaii
+            &copy; <span id="year"></span> | Ashley Anglesey | Hawaii | <a href="https://bountifulfruitarrangements.com/">Inspiration</a>
             <h5 class="modDate">Last Update: <span id="update"></span></h5>
         </footer>
         <script src="../time.js"></script>
