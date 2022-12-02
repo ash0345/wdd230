@@ -6,4 +6,16 @@
         flex-direction: row;
         margin: 0;
     }
+    #demo li {
+        margin-left: 35%;
+    }
+    .scenarios {
+        margin-left: 220px;
+    }
+    .about-me {
+        width: 75%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
 }

@@ -22,4 +22,27 @@
     .color-pallete {
         width: 25%;
     }
+    .section1 {
+        width: 48%;
+        margin: 0;
+        float: left;
+    }
+    .section2 {
+        width: 48%;
+        margin: 0;
+        float: right;
+    }
+    .line {
+        display: none;
+    }
+    .scenarios {
+        margin-left: 440px;
+    } 
+    .about-me {
+        width: 100%;
+    }
+    .scenarios-h2 {
+        margin-left: 600px;
+        text-align: left;
+    }
 }
