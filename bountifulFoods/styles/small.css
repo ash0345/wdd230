@@ -90,6 +90,24 @@ nav a:hover {
     border: 2px solid rgb(0, 0, 0, .5);
 }
 
+.small-wireframe, 
+.medium-wireframe,
+.large-wireframe {
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.medium-wireframe {
+    width: 25%;
+}
+
+.large-wireframe {
+    width: 40%;
+}
+
 /* FOOTER */
 
 footer {
