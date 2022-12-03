@@ -4,6 +4,9 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
+    .site-logo-foot {
+        margin: 0 auto;
+    }
     .left {
         grid-column: 1/2;
     }
