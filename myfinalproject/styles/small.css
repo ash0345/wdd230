@@ -23,7 +23,7 @@ body {
     background-color: #c43331;
 }
 
-.site-logo, .site-logo-foot {
+.site-logo {
     width: 25%;
 }
 
@@ -33,19 +33,39 @@ nav {
     background-color: #f4f4f9;
     border: 2px solid rgb(0, 0, 0, .5);
     line-height: 3em;
-    text-align: center;
+    text-align: left;
     font-size: 1.2em;
 }
 
-.nav-bar {
+button {
+    margin: 17px 10px 10px 10px;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+#nav-bar {
     list-style-type: none;
     padding: 0;
     display: flex;
+    text-align: center;
 	flex-direction: column;
 }
 
-.nav-bar li {
+#nav-bar li {
     flex: 1 1 auto;
+}
+
+nav ul {
+    margin-top: 0;
+}
+
+nav ul li a {
+    height: 30px;
+    display: block;
+    min-width: 60px;
+    text-decoration: none;
 }
 
 nav a {

@@ -17,11 +17,12 @@
         <div id="content">
             <header>
                 <img class="site-logo" src="images/fruit-logo-1 copy.png" alt="Logo">
-                <h1>Bountiful Foods Site Plan</h1>
+                <h1>Bountiful Foods</h1>
             </header>
             <nav>
-                <ul class="nav-bar">
-                    <li><a href="site-plan.html">Home</a></li>
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="nav-bar" class="hide">
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="fresh.html">Fresh</a></li>
                     <li><a href="aboutus.html">About Us</a></li>
                 </ul>
@@ -45,7 +46,7 @@
                         <li>                
                             <a href="fresh.html">Make your drink!</a>
                         </li>
-                    </ul>  
+                    </ul>
                 </div>
                 <div class="recipes div">
                     <h3>Your recipes</h3>
@@ -66,6 +67,7 @@
                 <p class="modDate">Last Update: <span id="update"></span></p>
             </div>
         </footer>
+        <script src="scripts/navigation.js"></script>
         <script src="../time.js"></script>
     </body>
 </html>
