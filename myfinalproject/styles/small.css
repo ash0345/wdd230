@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Lora', 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.googleapis.com/css2?family=Lora&family=Source+Sans+Pro&display=swap);
+    font-display: swap;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+#content {
+    background-color: #f4f4f9;
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Lora', 'Times New Roman', Times, serif;
+}
+
+body {
+    text-align: center;
+    margin: 0 auto;
+    background-color: #c43331;
+}
+
+.site-logo, .site-logo-foot {
+    width: 25%;
+}
+
+/* NAVIGATION */
+
+nav {
+    background-color: #f4f4f9;
+    border: 2px solid rgb(0, 0, 0, .5);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.nav-bar {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+	flex-direction: column;
+}
+
+.nav-bar li {
+    flex: 1 1 auto;
+}
+
+nav a {
+    padding:1em;
+    min-width: 70px;
+    text-decoration: none;
+}
+
+nav a:link, nav a:visited {
+    color: #0f77bd;
+    /* color: rgb(0, 0, 0, 0.8); */
+}
+
+nav a:hover {
+    color: #c43331;
+}  
+
+/* BODY STUFF */
+
+.div {
+    border: 2px solid darkgray;
+    margin: 10px;
+}
+
+/* ul.drink-button li {
+    height: 45px;
+    width: 100px;
+    margin: 0 auto;
+    list-style: none;
+    border: 2px solid darkgray;
+    background-color: antiquewhite;
+    margin: 17px 10px 10px 10px;
+} */
+
+/* FOOTER */
+
+footer {
+    background-color: #f4f4f9;
+    margin: 20px;
+    padding: 20px;
+}
+
+.modDate {
+    margin-bottom: .5em;
+}
