@@ -1,15 +1,49 @@
 @media only screen and (min-width: 1000px){
+    .site-logo {
+        width: 25%;
+    }
+    .head-title {
+        margin-bottom: 10px;
+        font-size: 3em;
+    }
+    .socials {
+        width: 4%;
+        float: right;
+        margin: 10px;
+    }
     .hide {
         display:inline;
     }
     #nav-bar {
         display: flex;
-        flex-direction: row;
         align-items: center;
         justify-content: center;
-        margin: 0;
+        height: 45px;
+        margin-bottom: 25px;
     }
     nav button {
         display: none;
+    }   
+    .welcome {
+        margin-bottom: 10px;
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.4em;
+    }
+    .weather-icon {
+        width: 25%;
+    }
+    .coast-info {
+        grid-column: 1/4;
+    }
+    .drink {
+        grid-column: 2/4;
+    }
+    ul.drink-button li {
+        margin-right: 19%;
+    }
+    .site-logo-footer {
+        width: 20%;
     }
 }
