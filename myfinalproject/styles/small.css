@@ -90,15 +90,34 @@ nav a:hover {
     margin: 10px;
 }
 
-/* ul.drink-button li {
-    height: 45px;
-    width: 100px;
+.weather-icon {
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+}
+
+ul.drink-button {
+    padding: 0;
+}
+
+ul.drink-button li {
+    max-width: 10rem;
+    padding: 10px;
     margin: 0 auto;
     list-style: none;
     border: 2px solid darkgray;
-    background-color: antiquewhite;
-    margin: 17px 10px 10px 10px;
-} */
+    background-color: #f8bd4f;
+}
+
+ul.drink-button li a {
+    text-decoration: none;
+    color: black;
+}
+
+.smoothies {
+    width: 50%;
+    margin-top: 10px;
+}
 
 /* FOOTER */
 
@@ -106,6 +125,12 @@ footer {
     background-color: #f4f4f9;
     margin: 20px;
     padding: 20px;
+}
+
+.line {
+    border-bottom: 2px solid #586f7c;
+    display: block;
+    margin: 10px;
 }
 
 .modDate {
