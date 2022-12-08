@@ -6,7 +6,7 @@
     font-display: swap;
 }
 
-h1, h2, h3, h4 {
+h2, h3, h4 {
     font-family: 'Source Sans Pro', Arial, sans-serif;
 }
 
@@ -24,7 +24,16 @@ body {
 }
 
 .site-logo {
-    width: 25%;
+    width: 50%;
+}
+
+.head-title {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.socials {
+    width: 8%;
 }
 
 /* NAVIGATION */
@@ -48,9 +57,7 @@ nav ul.hide {
 #nav-bar {
     list-style-type: none;
     padding: 0;
-    display: flex;
     text-align: center;
-	flex-direction: column;
 }
 
 #nav-bar li {
@@ -125,6 +132,15 @@ footer {
     background-color: #f4f4f9;
     margin: 20px;
     padding: 20px;
+}
+
+.site-logo-footer {
+    width: 25%;
+}
+
+.map {
+    text-decoration: none;
+    color: black;
 }
 
 .line {
