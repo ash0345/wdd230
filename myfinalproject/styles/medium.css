@@ -6,4 +6,39 @@
         flex-direction: row;
         margin: 0;
     }
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .coast-info {
+        grid-column: 1/3;
+    }
+    .weather-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .weather-info p {
+        margin: 5px;
+    }
+    .weather-icon {
+        width: 30%;
+    }
+    .drink {
+        grid-column: 1/4;
+    }
+    .drink h3 {
+        margin-top: 2em;
+    }
+    .smoothies {
+        float: left;
+        margin: 10px;
+        width: 40%;
+    }
+    ul.drink-button li {
+        margin-right: 16%;
+    }
+    .recipes {
+        grid-column: 1/4;
+    }
 }
