@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Fresh «|» Bountiful Foods</title>
+        <title>About Us «|» Bountiful Foods</title>
         <meta name="description" content="Site Plan for Ashley Anglesey in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
         <link href="https://fonts.googleapis.com/css2?family=Lora&family=Source+Sans+Pro&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../styles/normalize.css">
@@ -33,36 +33,36 @@
                 </ul>
             </nav>
             <main>
-                <h3>Create your drink!</h3>
-                <form method="get">
-                    <fieldset>
-                        <legend>Your Information</legend>
+                <div class="about-grid">
+                    <form class="contact-form" method="get" action="request.html">
+                        <legend class="getInTouch">Get in touch</legend>
                         <label class="top">First Name* <input type="text" name="fname" required></label>
+                        <label class="top">Last Name* <input type="text" name="lname" required></label>
                         <label class="top">Email* <input type="email" name="email" placeholder="example@gmail.com" required></label>
-                        <label class="top">Phone* <input type="tel" name="phone" placeholder="18085556487" required></label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Pick your ingredients</legend>
-                        <label class="top" for="fruit">Choose 3 of our fresh produce options:
-                            <select name="fruit1" id="fruit1">
-                                <option value="">Please Select &#9662;</option>
-                            </select>
-                            <select name="fruit2" id="fruit2">
-                                <option value="">Please Select &#9662;</option>
-                            </select>
-                            <select name="fruit3" id="fruit3">
-                                <option value="">Please Select &#9662;</option>
-                            </select>
-                        </label>
-                        <label class="top">Special Instructions<textarea name="instructions"></textarea></label>
-
+                        <label class="top">Phone* <input type="tel" name="phone" placeholder="18085556487" required></label>                        
+                        <label class="top text-box">Questions or other information you would like to let us know about<textarea name="questions"></textarea></label>
                         <input type="hidden" id="date" name="date" value="CurrentTime"> 
                         <input type="hidden" id="time" name="time" value="CurrentDate">
-                    </fieldset>                    
-                    <input type="submit" value="Make My Drink" class="submitBtn">
-                </form>
-                <div class="drink-results">
-                    <div>First Name: <span id="result_firstname"></span></div>
+                        <input type="submit" value="Send Request" class="submitBtn">
+                    </form>
+                    <div class="contactUs">
+                        <h2 class="contact">Contact Us</h2>
+                        <h3>Address</h3>
+                        <p class="contact-p">1694 Faraday Ave. Carlsbad, California</p>
+                        <h3>Phone Number</h3>
+                        <p class="contact-p">+1 (760)372-5539</p>
+                        <h3>Email</h3>
+                        <p class="contact-p email">info@bountifulfoods.org</p>
+
+                        <!-- MAP???? -->
+
+                        <h3>Create your own drink recipe using our fresh produce!</h3>
+                        <ul class="drink-button">
+                            <li>                
+                                <a href="fresh.html">Make your drink!</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </main>
         </div>
@@ -81,7 +81,6 @@
             </div>
         </footer>
         <script src="scripts/navigation.js"></script>
-        <script src="scripts/fruits.js"></script>
         <script src="../time.js"></script>
     </body>
 </html>

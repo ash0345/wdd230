@@ -1,18 +1,22 @@
 // fruit maker selection
 
-const requestURL = "https://brotherblazzard.github.io/canvas-content/fruit.json";
-const fruits = document.getElementById("#fruit");
+const requestURL = "https://api.npoint.io/bf7022b1cf30803ba0fd";
+const fruit1 = document.querySelector("#fruit1");
+const fruit2 = document.querySelector("#fruit2");
+const fruit3 = document.querySelector("#fruit3");
+let fruits = [];
 
 async function getFruits() {
     const response = await fetch(requestURL);
-    const data = await response.json();
-    data.forEach(name => {
-        displayFruit(name);
-        console.log(name);
+    fruits = await response.json();
+    fruits.forEach(fruit => {
+        displayFruit(fruit, fruit1);
+        displayFruit(fruit, fruit2);
+        displayFruit(fruit, fruit3);
     });
 }
 
-function displayFruit(fruit) {
+function displayFruit(fruit, parent) {
     // Create element to add
     let option = document.createElement('option');
 
@@ -20,7 +24,18 @@ function displayFruit(fruit) {
     option.textContent = `${fruit.name}`;
 
     // append content
-    fruits.appendChild(option);
+    parent.appendChild(option);
 }
 
 getFruits();
+
+// form submitted message
+
+function generateDrink(event) {
+    // get form results 
+    // loop through 3 fruits to calculate
+    // calculate nutrition value
+    // fill in drink result feilds
+    // remove hide class from div 
+    // add hide class to form 
+}
