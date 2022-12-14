@@ -36,9 +36,31 @@
         width: 40%;
     }
     ul.drink-button li {
-        margin-right: 16%;
+        margin: 0 auto;
     }
     .recipes {
         grid-column: 1/4;
     }
+    form {
+        max-width: 50%;
+    }
+    form label.top input, 
+    form label.top textarea {
+        max-width: 20rem;
+    }
+    form fieldset {
+        max-width: 22rem;
+    }
+    .drink-results {
+        max-width: 70%;
+    }
+    .drink-results div {
+        margin-left: 20%;
+    }
+    .about-grid {
+        grid-template-rows: 47em 1fr;
+    }
+    .contact-form {
+        max-width: 60%;    
+    }    
 }

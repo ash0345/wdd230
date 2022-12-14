@@ -148,7 +148,6 @@ form {
     border-radius: 10px;
     padding: .5rem 2%;
     width: 100%;
-    /* max-width: 50%; */
     margin: 2rem auto;
 }
 
@@ -159,7 +158,6 @@ form fieldset {
     border-radius: 10px;
     padding: .5rem 2%;
     width: 90%;
-    /* max-width: 22rem; */
 }
 
 form legend {
@@ -184,7 +182,6 @@ form label.top textarea {
     padding: .75rem;
     color: #555;
     width: 90%;
-    /* max-width: 20rem; */
     background-color: rgba(0,0,0,0.1);
 }
 
@@ -236,13 +233,11 @@ form label.top input:required:valid {
     border-radius: 10px;
     padding: .5rem 2%;
     width: 100%;
-    max-width: 50%;
     margin: 2rem auto;
 }
 
 .drink-results div {
     text-align: left;
-    margin-left: 20%;
     padding: 5px;
     color: #095b71;
     font-size: 1.2rem;
@@ -297,9 +292,11 @@ form label.top input:required:valid {
 
 .contact-form label {
     text-align: left;
-    width: 70%;
+    /* width: 70%; */
     padding: 15px;
-    padding-left: 0;
+    /* padding-left: 0; */
+    width: 95%;
+    max-width: 22rem;
 }
 
 .getInTouch {
