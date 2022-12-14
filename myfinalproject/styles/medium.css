@@ -36,6 +36,9 @@
         width: 40%;
     }
     ul.drink-button li {
+        margin-right: 19%;
+    }
+    .contactUs ul.drink-button li {
         margin: 0 auto;
     }
     .recipes {
