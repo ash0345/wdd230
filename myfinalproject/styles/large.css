@@ -40,8 +40,21 @@
     .drink {
         grid-column: 2/4;
     }
-    ul.drink-button li {
+    /* ul.drink-button li {
         margin-right: 19%;
+    } */
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .contact-form {
+        justify-content: center;
+    }
+    .getInTouch {
+        font-size: 1.5em;
+    }
+    .contactUs ul.drink-button {
+        margin-right: 20%;
     }
     .site-logo-footer {
         width: 20%;
