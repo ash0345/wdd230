@@ -33,13 +33,13 @@
                 </ul>
             </nav>
             <main>
-                <h3>Create your drink!</h3>
-                <form method="get">
+                <h3 class="fresh-welcome">Create your drink!</h3>
+                <form id="fruitForm" method="get">
                     <fieldset>
                         <legend>Your Information</legend>
-                        <label class="top">First Name* <input type="text" name="fname" required></label>
-                        <label class="top">Email* <input type="email" name="email" placeholder="example@gmail.com" required></label>
-                        <label class="top">Phone* <input type="tel" name="phone" placeholder="18085556487" required></label>
+                        <label class="top">First Name* <input id="first_name" type="text" name="fname" required></label>
+                        <label class="top">Email* <input id="email" type="email" name="email" placeholder="example@gmail.com" required></label>
+                        <label class="top">Phone* <input id="phone" type="tel" name="phone" placeholder="18085556487" required></label>
                     </fieldset>
                     <fieldset>
                         <legend>Pick your ingredients</legend>
@@ -54,15 +54,28 @@
                                 <option value="">Please Select &#9662;</option>
                             </select>
                         </label>
-                        <label class="top">Special Instructions<textarea name="instructions"></textarea></label>
+                        <label class="top">Special Instructions<textarea id="instructions" name="instructions"></textarea></label>
 
                         <input type="hidden" id="date" name="date" value="CurrentTime"> 
                         <input type="hidden" id="time" name="time" value="CurrentDate">
                     </fieldset>                    
-                    <input type="submit" value="Make My Drink" class="submitBtn">
+                    <input type="submit" onclick="removeHidden()" value="Make My Drink" class="submitBtn">
                 </form>
-                <div class="drink-results">
+                <div class="drink-results hide-div">
+                    <h3>Thank You!<br>Your order has been sent!</h3>
                     <div>First Name: <span id="result_firstname"></span></div>
+                    <div>Email: <span id="result_email"></span></div>
+                    <div>Phone: <span id="result_phone"></span></div>
+                    <div>Fruit 1: <span id="result_fruit1"></span></div>
+                    <div>Fruit 2: <span id="result_fruit2"></span></div>
+                    <div>Fruit 3: <span id="result_fruit3"></span></div>
+                    <div>Instructions: <span id="result_instructions"></span></div>
+                    <div>Carbohydrates: <span id="carbs"></span></div>
+                    <div>Protein: <span id="protein"></span></div>
+                    <div>Fat: <span id="fat"></span></div>
+                    <div>Sugar: <span id="sugar"></span></div>
+                    <div>Calories: <span id="calories"></span></div> 
+                    <div>Order Date: <span id="order_date"></span></div>
                 </div>
             </main>
         </div>

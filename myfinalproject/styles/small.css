@@ -137,6 +137,10 @@ ul.drink-button li a {
 
 /* FRESH */
 
+.fresh-welcome {
+    font-size: 2rem;
+}
+
 form {
     font-size: 16px;
     border: 1px solid #095b71;
@@ -224,6 +228,33 @@ form label.top input:required {
 
 form label.top input:required:valid {
     border-left: green solid 6px;
+}
+
+.drink-results {
+    border: 1px solid #095b71;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    width: 100%;
+    max-width: 50%;
+    margin: 2rem auto;
+}
+
+.drink-results div {
+    text-align: left;
+    margin-left: 20%;
+    padding: 5px;
+    color: #095b71;
+    font-size: 1.2rem;
+}
+
+.drink-results div span {
+    color: black;
+    font-size: 1rem;
+    margin-left: 15px;
+}
+
+.hide-div {
+    display: none;
 }
 
 /* FOOTER */
