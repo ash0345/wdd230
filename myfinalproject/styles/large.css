@@ -39,6 +39,7 @@
     }
     .drink {
         grid-column: 2/4;
+        grid-row: 2/3;
     }
     ul.drink-button li {
         margin-right: 17%;
