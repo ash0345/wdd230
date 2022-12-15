@@ -7,13 +7,13 @@ const humidity = document.querySelector('.humidity');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&units=imperial&appid=6bebf1caa2d153d51dfca5bcb5a26ff0';
 
-async function apiFetch() {
+async function fetchweather() {
     try {
       const response = await fetch(url);
       if (response.ok) {
-        const data = await response.json();
-        console.log(data);
-        displayResults(data);
+        const weatherData = await response.json();
+        console.log(weatherData);
+        displayWeatherResults(weatherData);
       } else {
           throw Error(await response.text());
       }
@@ -21,10 +21,10 @@ async function apiFetch() {
         console.log(error);
     }
 }
-  
-apiFetch();
 
-function displayResults(weatherData) {    
+fetchweather();
+
+function displayWeatherResults(weatherData) {    
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>&deg;F`;
 
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
